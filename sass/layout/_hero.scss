@@ -1,0 +1,156 @@
+.hero {
+    padding-top: 130px;
+    padding-bottom: 140px;
+    @media screen and (max-width: 860px) {
+        padding-bottom: 40px;
+        padding-top: 30px;
+    }
+    @media screen and (max-width: 520px) {
+        padding-bottom: 0px;
+        padding-top: 0px;
+      }
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 860px) {
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    &__text {
+        @media screen and (max-width: 860px) {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+          }
+
+    }
+    &-title {
+        width: 100%;
+        max-width: 528px;
+        color: rgb(255, 255, 255);
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 53px;
+        margin-bottom: 35px;
+
+        @media screen and (max-width: 520px) {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+    &__decs {
+        width: 100%;
+        max-width: 485px;
+        color: rgb(255, 255, 255);
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 25px;
+        margin-bottom: 23px;
+
+        @media screen and (max-width: 860px) {
+            max-width: 750px;
+            font-size: 25px;
+            line-height: 35px;
+          }
+          @media screen and (max-width: 520px) {
+            font-size: 18px; 
+            line-height: 25px;  
+        }
+    }
+    &__btns {
+        display: flex;
+        gap: 25px;
+
+        @media screen and (max-width: 520px) {
+            flex-direction: column;   
+        }
+    }
+    &__text__btn1{
+        padding: 15px 32px;
+        font-size: 21px;
+        line-height: 25px;
+        background: #C7F2FF;
+        transition: all 0.6s linear;
+        @media screen and (max-width: 520px) {
+            font-size: 18px;   
+            padding: 12px 24px;
+        }
+    }
+    &__text__btn1:hover{
+        background: #564232;
+        color: #fff;
+    }
+    &__text__btn1:active{
+        opacity: 0.1;
+    }
+    &__text__btn2{
+        padding: 15px 27px;
+        font-size: 21px;
+        line-height: 25px;
+        background: #FFF;
+        transition: all 0.6s linear;
+
+        @media screen and (max-width: 520px) {
+            font-size: 18px;   
+            padding: 12px 24px;
+        }
+
+    }
+    &__text__btn2:hover{
+        background: #564232;
+        color: #fff;
+    }
+    &__text__btn2:active{
+        opacity: 0.1;
+    }
+}
+.hero__img {
+    width: 100%;
+    max-width: 280px;
+    position: relative;
+    // &_img{
+    // }
+    .doctor-img{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+
+    }
+    &__title {
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        color: rgb(255, 255, 255);
+        font-size: 43px;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: 8px;
+        text-align: center;
+    }
+    &__btn {
+        position: absolute;
+        bottom: 15%;
+        right: 27%;
+        color: rgb(255, 255, 255);
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14px;
+        letter-spacing: 10%;
+        padding: 13px 27px;
+        border-radius: 23px;
+        background: rgb(52, 201, 182);
+        transition: all 0.5s linear;
+    }
+    &__btn:hover{
+        background: #564232;
+        // color: rgb(52, 201, 182);
+    }
+}

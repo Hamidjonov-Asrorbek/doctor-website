@@ -1,0 +1,92 @@
+.advocate {
+    padding-top: 23px;
+    padding-bottom: 30px;
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 990px) {
+            flex-direction: column-reverse;
+            row-gap: 30px;
+            align-items: center;
+          }
+    }
+    &__text {
+        @media screen and (max-width: 990px) {
+            width: 100%;
+            max-width: 900px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          }
+    }
+    &__text__title {
+        color: rgb(0, 0, 0);
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 41px;
+        margin-top: 129px;
+        margin-bottom: 29px;
+
+        @media screen and (max-width: 990px) {
+            margin-top: 10px;
+          }
+          @media screen and (max-width: 520px) {
+            font-size: 25px;
+            margin-bottom: 20px; 
+        }
+    }
+    &__text__desc {
+        width: 100%;
+        max-width: 361px;
+        color: rgb(117, 115, 115);
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 18px;
+        margin-bottom: 59px;
+
+        @media screen and (max-width: 990px) {
+            max-width: 800px;
+            font-size: 20px;
+            line-height: 25px;
+          }
+          @media screen and (max-width: 520px) {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 30px;
+        }
+    }
+    &__text__btn {
+        display: inline-block;
+        background: #34C9B6;
+        padding: 12px 30px;
+        color: #fff;
+        font-size: 18px;
+        line-height: 21px;
+        transition: all 0.5s linear;
+    }
+    &__text__btn:hover{
+        background: #564232;
+    }
+    &__text__btn:active{
+        opacity: 0.1;
+    }
+    &__imgs {
+        position: relative;
+    }
+    .operatsiya2{
+        @media screen and (max-width: 550px) {
+            width: 300px;
+        }
+    }
+    .operatsiya1{
+        position: absolute;
+        left: -20%;
+        top: 10%;
+
+        @media screen and (max-width: 710px) {
+            display: none;
+          }
+
+    }
+}

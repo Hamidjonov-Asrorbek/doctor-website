@@ -1,0 +1,88 @@
+.service {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    @media screen and (max-width: 860px) {
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    .services-container {
+        @media screen and (max-width: 860px) {
+            padding: 0;
+          }
+    }
+    &__list {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        column-gap: 25px;
+
+        @media screen and (max-width: 860px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            row-gap: 20px;
+          }
+        @media screen and (max-width: 550px) {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+          }
+    }
+    &__item {
+        padding-top: 31px;
+        padding-bottom: 46px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        box-shadow: 0px 4px 15px 1px rgba(0, 0, 0, 0.25);
+        transition: all 0.4s linear;
+        transform: scale(1);
+
+        @media screen and (max-width: 550px) {
+            width: 100%;
+            max-width: 550px;   
+        }
+    }
+    &__item:hover{
+        background: #C7F2FF;
+        cursor: pointer;
+        transform: scale(1.1);
+
+    }
+    .ellips {
+        border-radius: 50%;
+        background: #F3FCFF;
+        padding: 19px 20px;
+        margin-bottom: 28px;
+    }
+    &__item__title {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        text-align: center;
+        margin-bottom: 13px;
+        @media screen and (max-width: 520px) {
+            font-size: 20px;   
+        }
+    }
+    &__item__desc {
+        width: 100%;
+        max-width: 189px;
+        color: rgb(103, 100, 100);
+        font-size: 10px;
+        font-weight: 300;
+        line-height: 12px;
+        text-align: center;
+        @media screen and (max-width: 520px) {
+            font-size: 15px;
+            max-width: 350px;  
+            line-height: 18px;
+
+        }
+    }
+}
